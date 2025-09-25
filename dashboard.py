@@ -4,7 +4,7 @@ import plotly.express as px
 
 # Load Excel file
 file = "Summary of balances as at 25th Sep2025.xlsx"
-data = pd.read_excel(file, sheet_name="06.09.25")
+data = pd.read_excel(file, sheet_name="25.09.25")
 
 # Drop the first row (extra headers) and reset index
 data = data.drop(0).reset_index(drop=True)
@@ -29,7 +29,7 @@ for col in numeric_cols:
 
 # Streamlit UI
 st.title("📊 Members Contribution Dashboard")
-st.markdown("Data source: **06.09.25 sheet** from the uploaded Excel file.")
+st.markdown("Data source: **25.09.25 sheet** from the uploaded Excel file.")
 
 # Show raw data
 st.subheader("Raw Data")
